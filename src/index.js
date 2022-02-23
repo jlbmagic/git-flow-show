@@ -18,6 +18,11 @@ var options = {
 };
 var optionsTwo = {
   chart: {
+    events: {
+      dataPointSelection: function (d) {
+        alert("Hi");
+      },
+    },
     type: "bar",
   },
   series: [
